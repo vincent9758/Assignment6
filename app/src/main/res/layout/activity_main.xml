@@ -20,6 +20,20 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/Time"
+            android:hint="Date"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
             android:id="@+id/holder1"
             android:hint="From"
             android:layout_width="40dp"
@@ -47,6 +61,20 @@
             android:inputType="textMultiLine" />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Money"
+            android:hint="Amount"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
     </LinearLayout>
 
     <LinearLayout
@@ -94,6 +122,7 @@
 
         <Button
             android:id="@+id/search"
+            android:background="#4472c4"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="SEARCH" />
@@ -111,21 +140,21 @@
 
         <EditText
             android:id="@+id/month"
-            android:hint="MM"
-            android:layout_width="100dp"
+            android:hint="Month"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:inputType="textMultiLine" />
         <EditText
             android:id="@+id/day"
-            android:hint="DD"
-            android:layout_width="100dp"
+            android:hint="Day"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:inputType="textMultiLine" />
 
         <EditText
             android:id="@+id/year"
-            android:hint="YYYY"
-            android:layout_width="100dp"
+            android:hint="Year"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:inputType="textMultiLine" />
 
@@ -140,18 +169,19 @@
         <EditText
             android:id="@+id/editAmount"
             android:hint="Amount"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
             android:inputType="textMultiLine" />
         <EditText
             android:id="@+id/editEvent"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:hint="Event"
             android:layout_height="match_parent"
             android:inputType="textMultiLine" />
 
         <Button
             android:id="@+id/btnAdd"
+            android:background="#4472c4"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="+" />
@@ -160,6 +190,7 @@
             android:id="@+id/btnSub"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:background="#4472c4"
             android:text="-" />
     </LinearLayout>
 
