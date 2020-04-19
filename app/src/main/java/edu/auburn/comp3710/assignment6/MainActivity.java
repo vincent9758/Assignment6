@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         else if (getEdate.length() > 0 && getSdate.length() > 0 && getHighBound.equals("") && getLowBound.length() > 0) {
-                            getHighBound = "99999999";
+                            getHighBound = "1000000";
                             search(getSdate,getEdate,getLowBound,getHighBound);
                         }
                         reset();

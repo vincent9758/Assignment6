@@ -43,13 +43,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (LowBoundPrice.equals("n") && HighBoundPrice.equals("n")){
             int getSdate = Integer.parseInt(Sdate);
             int getEdate = Integer.parseInt(Edate);
-            result = db.rawQuery("SELECT * FROM"+ TABLE_NAME+ " WHERE Date >= " +getSdate + " AND Date <= " + getEdate,null);
+            result = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE Date >= " +getSdate + " AND Date <= " + getEdate,null);
         }
 
         else if (Sdate.equals("n") && Edate.equals("n")){
             double getLowBound = Double.parseDouble(LowBoundPrice);
             double getHighBound = Double.parseDouble(HighBoundPrice);
-            result = db.rawQuery("SELECT * FROM"+ TABLE_NAME+ " WHERE Amount >= " + getLowBound + " AND Amount <= " + getHighBound,null);
+            result = db.rawQuery("SELECT * FROM " + TABLE_NAME+ " WHERE Amount >= " + getLowBound + " AND Amount <= " + getHighBound,null);
         }
 
         else{
@@ -57,7 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             int getEdate = Integer.parseInt(Edate);
             double getLowBound = Double.parseDouble(LowBoundPrice);
             double getHighBound = Double.parseDouble(HighBoundPrice);
-            result = db.rawQuery("SELECT * FROM"+ TABLE_NAME+ " WHERE Amount >= " + getLowBound + " AND Amount <= " + getHighBound + " AND Date >=" + getSdate + " AND Date <=" + getEdate,null);
+            result = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE Amount >= " + getLowBound + " AND Amount <= " + getHighBound + " AND Date >=" + getSdate + " AND Date <=" + getEdate,null);
         }
 
 
