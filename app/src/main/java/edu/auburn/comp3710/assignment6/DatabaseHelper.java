@@ -32,6 +32,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.insert(TABLE_NAME,null, content);
     }
 
+
+
+    public Cursor ReadData(){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor result = database.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+        return result;
+    }
     public Cursor SearchData(String Sdate,String Edate,String LowBoundPrice,String HighBoundPrice) {
 
 
@@ -61,13 +68,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
 
-        return result;
-    }
-
-
-    public Cursor ReadData(){
-        SQLiteDatabase database = this.getReadableDatabase();
-        Cursor result = database.rawQuery("SELECT * FROM " + TABLE_NAME, null);
         return result;
     }
 }

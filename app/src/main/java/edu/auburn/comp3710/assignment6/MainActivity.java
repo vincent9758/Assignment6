@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        double Amount =  -1* Double.parseDouble(amount.getText().toString());
+                        double Amount = Double.parseDouble(amount.getText().toString());
                         int date = Integer.parseInt(month.getText().toString() + day.getText().toString() + year.getText().toString());
                         Database.Create(date, Amount, event.getText().toString());
                         GetHistory();
